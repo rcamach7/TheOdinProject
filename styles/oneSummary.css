@@ -1,0 +1,19 @@
+
+html {
+    background-color: bisque;
+    margin: auto;
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: black;
+}
+
+body {
+    border-style: solid;
+    padding: 10px;
+}
+
+/* Try to keep image heights as close to original so there's no worping of quality. Width doesn't matter too much. */
+img {
+    height: auto;
+    width: 400px;
+}
