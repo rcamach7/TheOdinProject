@@ -1,6 +1,18 @@
+html {
+    background-image: url("../images/myBackground.png");
+    background-size: 25px 25px;
+	background-repeat: repeat;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
+    background-color: rgb(46, 45, 45);
+    color: goldenrod;
+
     width: 800px;
-    margin: 0 auto;
+    height: 800px;
+    margin: 10 auto;
 }
 
 /* Styling and positioning for all visible content and main div holder */
@@ -17,6 +29,10 @@ body {
     text-align: center;
 }
 
+.header {
+    border-bottom: goldenrod solid 2px;
+}
+
 /* Now Let's Create Inner Flex Boxes for the actual content inside of the main section, first by setting the div to flexboxes */
 .flex-container-col .main {
     /* Will give it proportional size compared to the other flex boxes */
@@ -28,7 +44,7 @@ body {
     justify-content: center;
 
     /* Just For Visualizations */
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .bookContainer {
@@ -41,7 +57,7 @@ body {
 .main .bookContainer .books {
     width: 225px;
     height: 400px;
-    background-color: blue;
+    background-color: rgb(133, 98, 11);
  }
  
  /* DIVING DEEPER INTO THE BOOKS CONTAINER CONTENTS, THE MEAT OF THE WEBSITE*/
@@ -72,6 +88,21 @@ body {
 
 /* PROPERTIES FOR FOOTER */
 .flex-container-col .footer {
-    flex: 0.5 1 0%;
+    flex: 0.25 1 0%;
+
+    border-top: 2px solid goldenrod;
+
+    /* Styling for debugging */
+    /* border: red 2px solid; */
+
+    /* Styling For Contents WITHIN or SUBSET of FOOTER */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .icon {
+    height: 100%;
+    border-radius: 50%;
 }
 
