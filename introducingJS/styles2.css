@@ -1,0 +1,23 @@
+html {
+    background-color: white;
+}
+
+body div {
+    text-align: center;
+    height: 500px;
+}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+    border: solid 5px black;
+}
+
+#additionSelector {
+    padding: 10px;
+}
+
+#lights {
+    width: 170px;
+    font-size: x-large;
+}

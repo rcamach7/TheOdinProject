@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles2.css">
+    </head>
+    <body>
+        <div>
+            <h1>Hello World</h1>
+            <button id = "lights">Turn Lights OFF</button>
+            <script>
+                const btn = document.getElementById("lights");
+                btn.addEventListener("click", lightSwitch);
+                function lightSwitch() {
+                    if (btn.textContent == "Turn Lights ON") {
+                        btn.textContent = "Turn Lights OFF";
+                        document.documentElement.style.backgroundColor = "white";
+                    } else {
+                        btn.textContent = "Turn Lights ON";
+                        document.documentElement.style.backgroundColor = "black";
+                    }
+                }
+            </script>
+
+            <div id = "additionSelector">
+                <label>Choose a value to add 100 to: </label>
+                <select id="valueSelected">
+                    <option value="0">Please Select A Number</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+                <p id="answerHere"></p>
+                <script>
+                    let selected = document.getElementById("valueSelected");
+                    selected.addEventListener('change', function() {
+                        document.getElementById("answerHere").textContent = parseInt(this.value) + 100;
+                    }, false);
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
