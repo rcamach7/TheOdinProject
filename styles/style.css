@@ -35,15 +35,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 .main .bookContainer .books {
-    width: 200px;
-    height: 300px;
+    width: 225px;
+    height: 400px;
     background-color: blue;
  }
+ 
+ /* DIVING DEEPER INTO THE BOOKS CONTAINER CONTENTS, THE MEAT OF THE WEBSITE*/
+ .books {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+ }
+
+.bookInfo, .viewBookButton {
+    flex: 1;
+}
+
+.bookInfo {
+    height: 6px
+}
+
+ .books img {
+    width: 100%;
+    height: 75%;
+ }
+
+ .books .viewBookButton {
+     justify-content: flex-end;
+ }
+
+
 /* PROPERTIES FOR FOOTER */
 .flex-container-col .footer {
     flex: 0.5 1 0%;
 }
+
