@@ -10,7 +10,7 @@ body {
     background-color: rgb(46, 45, 45);
     color: goldenrod;
 
-    width: 800px;
+    width: 1200px;
     height: 800px;
     margin: 10 auto;
 }
@@ -51,12 +51,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 75px;
 }
 
 .main .bookContainer .books {
-    width: 225px;
-    height: 400px;
+    width: 250px;
+    height: 425px;
     background-color: rgb(133, 98, 11);
  }
  
