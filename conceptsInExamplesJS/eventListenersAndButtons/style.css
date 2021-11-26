@@ -1,0 +1,12 @@
+html {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+
+    border: solid red 2px;
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+}

@@ -22,5 +22,16 @@ listBuilder = listBuilder + "</ul>";
 // Send text file, for our list to be generated
 document.getElementById("recipeHolder").innerHTML = listBuilder;
 
+// Build new element, then inserts it into the DOM! 
+const div = document.createElement("div");
+const text = document.createTextNode("INSERTION OF VIRUS");
+div.style.color = "yellow";
+div.setAttribute("id", "virusDiv");
+div.appendChild(text);
+
+const currElement = document.getElementById("firstMainElement");
+currElement.appendChild(div);
+
+
 
 

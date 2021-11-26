@@ -1,0 +1,16 @@
+body {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: red solid 2px;
+    text-align: center;
+}
+
+.myLargeText {
+    color: blue;
+}
+
+.secondContainer {
+    background-color: pink;
+    border: solid black 2px;
+}
